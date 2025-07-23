@@ -1219,12 +1219,12 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'✯ ━━━━❀°𝑳𝒊𝒏𝒌 𝑰𝒅: {str(count).zfill(3)} °❀ ━━━━ ✯\n**╭━━━━━━━━━━━━━ ❀° ━━━╮\n┣⪼𝑽𝒊𝒅𝒆𝒐 👨‍💻 𝑻𝒊𝒕𝒍𝒆 :** `{name1} [{res}p].mkv`\n```-┈━═.•°✅ STRANGER ✅°•.═━┈-```\n<blockquote><b>💠 §†RÄñGÈ 💁‍♂️</b> {b_name}</blockquote>\n**┣⪼§†RÄñGÈ Bõť ➤**[{CR}](https://i.ibb.co/9m20Ys7k/photo-2025-06-22-13-16-36-7518790252551471136.jpg)\n╰━━━━━━━━━━━━━ ❀° ━━━╯シ\n\n👾 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥.𝗔𝗜 | 💻 𝗘𝗫𝗣𝗟𝗢𝗜𝗧 𝗦𝗬𝗦𝗧𝗘𝗠\n"'
-                cc1 = f'✯ ━━━━❀°𝑳𝒊𝒏𝒌 𝑰𝒅: {str(count).zfill(3)} °❀ ━━━━ ✯\n**╭━━━━━━━━━━━━━ ❀° ━━━╮\n┣⪼💾 𝑻𝒊𝒕𝒍𝒆 :** `{name1}.pdf`\n```-┈━═.•°✅ STRANGER ✅°•.═━┈-```\n<blockquote><b>💠 ѕтяαηgє 💁‍♂️</b> {b_name}</blockquote>\n**┣⪼ѕтяαηgє Bõť ➤**[{CR}](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)\n╰━━━━━━━━━━━━━ ❀° ━━━╯シ\n\n👾 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥.𝗔𝗜 | 💻 𝗘𝗫𝗣𝗟𝗢𝗜𝗧 𝗦𝗬𝗦𝗧𝗘𝗠\n"'
-                cczip = f'✯ ━━━━❀°𝑳𝒊𝒏𝒌 𝑰𝒅: {str(count).zfill(3)} °❀ ━━━━ ✯\n**╭━━━━━━━━━━━━━ ❀° ━━━╮\n┣⪼👝 𝑻𝒊𝒕𝒍𝒆 :** `{name1}.zip`\n```-┈━═.•°✅ STRANGER ✅°•.═━┈-```\n<blockquote><b>💠 ʂɬཞąŋɠɛ 💁‍♂️</b> {b_name}</blockquote>\n**┣⪼§†RÄñGÈ Bõť ➤**[{CR}](https://i.ibb.co/9m20Ys7k/photo-2025-06-22-13-16-36-7518790252551471136.jpg)\n╰━━━━━━━━━━━━━ ❀° ━━━╯シ\n\n👾 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥.𝗔𝗜 | 💻 𝗘𝗫𝗣𝗟𝗢𝗜𝗧 𝗦𝗬𝗦𝗧𝗘𝗠\n"' 
-                ccimg = f'✯ ━━━━❀°𝑳𝒊𝒏𝒌 𝑰𝒅: {str(count).zfill(3)} °❀ ━━━━ ✯\n**╭━━━━━━━━━━━━━ ❀° ━━━╮\n┣⪼🌌 𝑻𝒊𝒕𝒍𝒆 :** `{name1}.jpg`\n```-┈━═.•°✅ STRANGER ✅°•.═━┈-```\n<blockquote><b>💠 ֆȶʀǟռɢɛ 💁‍♂️</b> {b_name}</blockquote>\n**┣⪼ֆȶʀǟռɢɛ Bõť**[{CR}](https://i.ibb.co/9m20Ys7k/photo-2025-06-22-13-16-36-7518790252551471136.jpg)\n╰━━━━━━━━━━━━━ ❀° ━━━╯シ\n\n👾 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥.𝗔𝗜 | 💻 𝗘𝗫𝗣𝗟𝗢𝗜𝗧 𝗦𝗬𝗦𝗧𝗘𝗠\n"'
-                ccm = f'✯ ━━━━❀°𝑳𝒊𝒏𝒌 𝑰𝒅: {str(count).zfill(3)} °❀ ━━━━ ✯\n**╭━━━━━━━━━━━━━ ❀° ━━━╮\n┣⪼🎧 𝑻𝒊𝒕𝒍𝒆 :** `{name1}.mp3`\n```-┈━═.•°✅ STRANGER ✅°•.═━┈-```\n<blockquote><b>💠 §†RÄñGÈ 💁‍♂️</b> {b_name}</blockquote>\n**┣⪼𝑬𝒙𝒕𝒓𝒂𝒄𝒕𝒆𝒅 𝑩𝒚 ➤**[{CR}](https://i.ibb.co/9m20Ys7k/photo-2025-06-22-13-16-36-7518790252551471136.jpg)\n╰━━━━━━━━━━━━━ ❀° ━━━╯シ\n\n👾 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥.𝗔𝗜 | 💻 𝗘𝗫𝗣𝗟𝗢𝗜𝗧 𝗦𝗬𝗦𝗧𝗘𝗠\n"'
-                cchtml = f'✯ ━━━━❀°𝑳𝒊𝒏𝒌 𝑰𝒅: {str(count).zfill(3)} °❀ ━━━━ ✯\n**╭━━━━━━━━━━━━━ ❀° ━━━╮\n┣⪼🤖 𝑻𝒊𝒕𝒍𝒆 :** `{name1}.html`\n```-┈━═.•°✅STRANGER 𝑩𝒂𝒕𝒄𝒉✅°•.═━┈-```\n<blockquote><b>💠 ʂɬཞąŋɠɛ 💁‍♂️</b> {b_name}</blockquote>\n\n**┣⪼ʂɬཞąŋɠɛ ų℘Ɩơąɖɛཞ ცყ ➤**[{CR}](https://i.ibb.co/9m20Ys7k/photo-2025-06-22-13-16-36-7518790252551471136.jpg)\n╰━━━━━━━━━━━━━ ❀° ━━━╯シ\n\n👾 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥.𝗔𝗜 | 💻 𝗘𝗫𝗣𝗟𝗢𝗜𝗧 𝗦𝗬𝗦𝗧𝗘𝗠\n"'
+                cc = f'✯ ━━━━❀°𝑳𝒊𝒏𝒌 𝑰𝒅: {str(count).zfill(3)} °❀ ━━━━ ✯\n**╭━━━━━━━━━━━━━ ❀° ━━━╮\n┣⪼𝑽𝒊𝒅𝒆𝒐 👨‍💻 𝑻𝒊𝒕𝒍𝒆 :** `{name1} [{res}p].mkv`\n```-┈━═.•°✅ STRANGER ✅°•.═━┈-```\n<blockquote><b>💠 §†RÄñGÈ 💁‍♂️</b> {b_name}</blockquote>\n**┣⪼§†RÄñGÈ Bõť ➤**[{CR}](https://i.ibb.co/9m20Ys7k/photo-2025-06-22-13-16-36-7518790252551471136.jpg)\n╰━━━━━━━━━━━━━ ❀° ━━━╯シ\n👾 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥.𝗔𝗜 | 💻 𝗘𝗫𝗣𝗟𝗢𝗜𝗧 𝗦𝗬𝗦𝗧𝗘𝗠\n"
+                cc1 = f'✯ ━━━━❀°𝑳𝒊𝒏𝒌 𝑰𝒅: {str(count).zfill(3)} °❀ ━━━━ ✯\n**╭━━━━━━━━━━━━━ ❀° ━━━╮\n┣⪼💾 𝑻𝒊𝒕𝒍𝒆 :** `{name1}.pdf`\n```-┈━═.•°✅ STRANGER ✅°•.═━┈-```\n<blockquote><b>💠 ѕтяαηgє 💁‍♂️</b> {b_name}</blockquote>\n**┣⪼ѕтяαηgє Bõť ➤**[{CR}](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)\n╰━━━━━━━━━━━━━ ❀° ━━━╯シ\n👾 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥.𝗔𝗜 | 💻 𝗘𝗫𝗣𝗟𝗢𝗜𝗧 𝗦𝗬𝗦𝗧𝗘𝗠\n"
+                cczip = f'✯ ━━━━❀°𝑳𝒊𝒏𝒌 𝑰𝒅: {str(count).zfill(3)} °❀ ━━━━ ✯\n**╭━━━━━━━━━━━━━ ❀° ━━━╮\n┣⪼👝 𝑻𝒊𝒕𝒍𝒆 :** `{name1}.zip`\n```-┈━═.•°✅ STRANGER ✅°•.═━┈-```\n<blockquote><b>💠 ʂɬཞąŋɠɛ 💁‍♂️</b> {b_name}</blockquote>\n**┣⪼§†RÄñGÈ Bõť ➤**[{CR}](https://i.ibb.co/9m20Ys7k/photo-2025-06-22-13-16-36-7518790252551471136.jpg)\n╰━━━━━━━━━━━━━ ❀° ━━━╯シ\n👾 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥.𝗔𝗜 | 💻 𝗘𝗫𝗣𝗟𝗢𝗜𝗧 𝗦𝗬𝗦𝗧𝗘𝗠\n"
+                ccimg = f'✯ ━━━━❀°𝑳𝒊𝒏𝒌 𝑰𝒅: {str(count).zfill(3)} °❀ ━━━━ ✯\n**╭━━━━━━━━━━━━━ ❀° ━━━╮\n┣⪼🌌 𝑻𝒊𝒕𝒍𝒆 :** `{name1}.jpg`\n```-┈━═.•°✅ STRANGER ✅°•.═━┈-```\n<blockquote><b>💠 ֆȶʀǟռɢɛ 💁‍♂️</b> {b_name}</blockquote>\n**┣⪼ֆȶʀǟռɢɛ Bõť**[{CR}](https://i.ibb.co/9m20Ys7k/photo-2025-06-22-13-16-36-7518790252551471136.jpg)\n╰━━━━━━━━━━━━━ ❀° ━━━╯シ\n👾 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥.𝗔𝗜 | 💻 𝗘𝗫𝗣𝗟𝗢𝗜𝗧 𝗦𝗬𝗦𝗧𝗘𝗠\n"
+                ccm = f'✯ ━━━━❀°𝑳𝒊𝒏𝒌 𝑰𝒅: {str(count).zfill(3)} °❀ ━━━━ ✯\n**╭━━━━━━━━━━━━━ ❀° ━━━╮\n┣⪼🎧 𝑻𝒊𝒕𝒍𝒆 :** `{name1}.mp3`\n```-┈━═.•°✅ STRANGER ✅°•.═━┈-```\n<blockquote><b>💠 §†RÄñGÈ 💁‍♂️</b> {b_name}</blockquote>\n**┣⪼𝑬𝒙𝒕𝒓𝒂𝒄𝒕𝒆𝒅 𝑩𝒚 ➤**[{CR}](https://i.ibb.co/9m20Ys7k/photo-2025-06-22-13-16-36-7518790252551471136.jpg)\n╰━━━━━━━━━━━━━ ❀° ━━━╯シ\n👾 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥.𝗔𝗜 | 💻 𝗘𝗫𝗣𝗟𝗢𝗜𝗧 𝗦𝗬𝗦𝗧𝗘𝗠\n"
+                cchtml = f'✯ ━━━━❀°𝑳𝒊𝒏𝒌 𝑰𝒅: {str(count).zfill(3)} °❀ ━━━━ ✯\n**╭━━━━━━━━━━━━━ ❀° ━━━╮\n┣⪼🤖 𝑻𝒊𝒕𝒍𝒆 :** `{name1}.html`\n```-┈━═.•°✅STRANGER 𝑩𝒂𝒕𝒄𝒉✅°•.═━┈-```\n<blockquote><b>💠 ʂɬཞąŋɠɛ 💁‍♂️</b> {b_name}</blockquote>\n\n**┣⪼ʂɬཞąŋɠɛ ų℘Ɩơąɖɛཞ ცყ ➤**[{CR}](https://i.ibb.co/9m20Ys7k/photo-2025-06-22-13-16-36-7518790252551471136.jpg)\n╰━━━━━━━━━━━━━ ❀° ━━━╯シ\n👾 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥.𝗔𝗜 | 💻 𝗘𝗫𝗣𝗟𝗢𝗜𝗧 𝗦𝗬𝗦𝗧𝗘𝗠\n"
                   
                 if "drive" in url:
                     try:
@@ -1328,21 +1328,23 @@ async def txt_handler(bot: Client, m: Message):
                 elif 'encrypted.m' in url:    
                     remaining_links = len(links) - count
                     progress = (count / len(links)) * 100
-                    Show1 = f"<blockquote>🚀𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬 » {progress:.2f}%</blockquote>\n┃\n" \
-                           f"┣🔗𝐈𝐧𝐝𝐞𝐱 » {count}/{len(links)}\n┃\n" \
-                           f"╰━🖇️𝐑𝐞𝐦𝐚𝐢𝐧 » {remaining_links}\n" \
-                           f"━━━━━━━━━━━━━━━━━━━━━━━━\n" \
-                           f"<blockquote><b>⚡[(『 WELCOME STRANGER 』🙋 ...⏳)](https://i.ibb.co/hxQ73ZYw/photo-2025-04-12-18-46-28-7492500010408345604.jpg)</b></blockquote>\n┃\n" \
-                           f'┣💃𝐂𝐫𝐞𝐝𝐢𝐭 » {CR}\n┃\n' \
-                           f"╰━📚𝐁𝐚𝐭𝐜𝐡 » {b_name}\n" \
-                           f"━━━━━━━━━━━━━━━━━━━━━━━━━\n" \
-                           f"<blockquote>📚𝐓𝐢𝐭𝐥𝐞 » {name}</blockquote>\n┃\n" \
-                           f"┣🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {quality}\n┃\n" \
-                           f'┣━🔗𝐋𝐢𝐧𝐤 » <a href="{link0}">**Original Link**</a>\n┃\n' \
-                           f'╰━━🖇️𝐔𝐫𝐥 » <a href="{url}">**Api Link**</a>\n' \
-                           f"━━━━━━━━━━━━━━━━━━━━━━━━━\n" \
-                           f"🛑**Send** /stop **to stop process**\n┃\n" \
-                           f"╰━[🙆‍♂️ 𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 🤷‍♂️ 『 WELCOME STRANGER 』🙋](https://i.ibb.co/hxQ73ZYw/photo-2025-04-12-18-46-28-7492500010408345604.jpg)"
+                    Show1 =( f"<code>┌─[ STRANGER@Bot ]─[📦 DOWNLOAD STATUS ]</code>\n"
+    f"<code>│</code>\n"
+    f"<code>├──▶ Progress      : {progress:.2f}%</code>\n"
+    f"<code>├──▶ Index        : {count}/{len(links)}</code>\n"
+    f"<code>├──▶ Remaining    : {remaining_links} file(s)</code>\n"
+    f"<code>├──▶ Batch        : {b_name}</code>\n"
+    f"<code>├──▶ Title        : {name}</code>\n"
+    f"<code>├──▶ Quality      : {quality}</code>\n"
+    f"<code>├──▶ Speed        : {speed}/s</code>\n"
+    f"<code>├──▶ Elapsed Time : {elapsed}</code>\n"
+    f"<code>├──▶ ETA          : {eta}</code>\n"
+    f"<code>│</code>\n"
+    f"<code>├──▶ Original     : {link0}</code>\n"
+    f"<code>├──▶ API Link     : {url}</code>\n"
+    f"<code>│</code>\n"
+    f"<code>└─> Made by 『 WELCOME STRANGER 』 💀</code>"
+)
                     Show = f"<i><b>Video Downloading</b></i>\n<blockquote><b>{str(count).zfill(3)}) {name1}</b></blockquote>" 
                     prog = await bot.send_message(channel_id, Show, disable_web_page_preview=True)
                     prog1 = await m.reply_text(Show1, disable_web_page_preview=True)
@@ -1358,22 +1360,20 @@ async def txt_handler(bot: Client, m: Message):
                 elif 'drmcdni' in url or 'drm/wv' in url:
                     remaining_links = len(links) - count
                     progress = (count / len(links)) * 100
-                    Show1 = f"<blockquote>🚀𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬 » {progress:.2f}%</blockquote>\n┃\n" \
-                           f"┣🔗𝐈𝐧𝐝𝐞𝐱 » {count}/{len(links)}\n┃\n" \
-                           f"╰━🖇️𝐑𝐞𝐦𝐚𝐢𝐧 » {remaining_links}\n" \
-                           f"━━━━━━━━━━━━━━━━━━━━━━━━\n" \
-                           f"<blockquote><b>⚡[(『 WELCOME STRANGER 』🙋 ...⏳)](https://i.ibb.co/hxQ73ZYw/photo-2025-04-12-18-46-28-7492500010408345604.jpg)</b></blockquote>\n┃\n" \
-                           f'┣💃𝐂𝐫𝐞𝐝𝐢𝐭 » {CR}\n┃\n' \
-                           f"╰━📚𝐁𝐚𝐭𝐜𝐡 » {b_name}\n" \
-                           f"━━━━━━━━━━━━━━━━━━━━━━━━━\n" \
-                           f"<blockquote>📚𝐓𝐢𝐭𝐥𝐞 » {name}</blockquote>\n┃\n" \
-                           f"┣🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {quality}\n┃\n" \
-                           f'┣━🔗𝐋𝐢𝐧𝐤 » <a href="{link0}">**Original Link**</a>\n┃\n' \
-                           f'╰━━🖇️𝐔𝐫𝐥 » <a href="{url}">**Api Link**</a>\n' \
-                           f"━━━━━━━━━━━━━━━━━━━━━━━━━\n" \
-                           f"🛑**Send** /stop **to stop process**\n┃\n" \
-                           f"╰━[🙆‍♂️ 𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 🤷‍♂️ 『 WELCOME STRANGER 』🙋](https://i.ibb.co/hxQ73ZYw/photo-2025-04-12-18-46-28-7492500010408345604.jpg)"
-                    Show = f"<i><b>Video Downloading</b></i>\n<blockquote><b>{str(count).zfill(3)}) {name1}</b></blockquote>"
+                    Show1 = f"<pre>\n"
+    f"╔════════════════════════════════════╗\n"
+    f"║   🚀 PROGRESS  : {progress:.2f}%                       ║\n"
+    f"║   🔢 INDEX     : {count}/{len(links)}                      ║\n"
+    f"║   🖇️ REMAIN    : {remaining_links} files                  ║\n"
+    f"╠════════════════════════════════════╣\n"
+    f"║   👨‍💻 STRANGER BOT DOWNLOADER v1.0      ║\n"
+    f"╚════════════════════════════════════╝\n"
+    f"┌────────── META DATA ─────────┐\n"
+    f"│ 👤 CREDIT     : {CR} \n"
+    f"│ 📚 BATCH      : {b_name} \n"
+    f"│ 📖 TITLE      : {name} \n"
+    f"│ 🍁 QUALITY    : {quality} \n"
+    f"│ 🔗 ORIGINAL   : [Open Link]({link0}) \n
                     prog = await bot.send_message(channel_id, Show, disable_web_page_preview=True)
                     prog1 = await m.reply_text(Show1, disable_web_page_preview=True)
                     res_file = await helper.decrypt_and_merge_video(mpd, keys_string, path, name, raw_text2)
