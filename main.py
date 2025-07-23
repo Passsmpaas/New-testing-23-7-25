@@ -1302,9 +1302,8 @@ async def txt_handler(bot: Client, m: Message):
                     except FloodWait as e:
                         await m.reply_text(str(e))
                         time.sleep(e.x)
-                        continue    
-
-                elif any(ext in url for ext in [".mp3", ".wav", ".m4a"]):
+                        continue
+                         elif any(ext in url for ext in [".mp3", ".wav", ".m4a"]):
                     try:
                         ext = url.split('.')[-1]
                         cmd = f'yt-dlp -o "{name}.{ext}" "{url}"'
@@ -1318,11 +1317,11 @@ async def txt_handler(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue    
                     
-              elif 'encrypted.m' in url:    
+                elif 'encrypted.m' in url:    
                     remaining_links = len(links) - count
                     progress = (count / len(links)) * 100
-                    Show1 = f"╠════════════════════════════════════╣\n"
-                           f"╚═══════════════════════════════════╝\n"
+                    Show1 = f"╠═════════『 STRANGER 』 ════════════╣\n"
+                           f"╚═════════════ STRANGER ══════════════════════╝\n"
                            f"<blockquote>🚀𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬 » {progress:.2f}%</blockquote>\n┃\n"
                            f"┣🔗𝐈𝐧𝐝𝐞𝐱 » {count}/{len(links)}\n┃\n"
                            f"╰━🖇️𝐑𝐞𝐦𝐚𝐢𝐧 » {remaining_links}\n"
