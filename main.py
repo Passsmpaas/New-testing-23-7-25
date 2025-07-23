@@ -1318,44 +1318,58 @@ async def txt_handler(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue    
                     
-                elif 'encrypted.m' in url:    
-                    remaining_links = len(links) - count
-                    progress = (count / len(links)) * 100
-                    Show1 = (
-                           f"╠════════════════════════════════════╣\n"
-                           f"║   👨‍💻 STRANGER BOT DOWNLOADER v1.0      ║\n"
-                           f"╚════════════════════════════════════╝\n"
-                           f"<blockquote>🚀𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬 » {progress:.2f}%</blockquote>\n┃\n"
-                           f"┣🔗𝐈𝐧𝐝𝐞𝐱 » {count}/{len(links)}\n┃\n"
-                           f"╰━🖇️𝐑𝐞𝐦𝐚𝐢𝐧 » {remaining_links}\n"
-                           f"╠═══════════════════════════════╣\n"
-                           f"╠═══ ⟦ STRANGER.DOWNLOAD ⟧ ═══╣\n"
-                           f"╰──────────⟦ RUNNING ⟧ \n"
-                           f"╭──[ WELCOME_STRANGER@Terminal ]──⟫ \n"
-                           f"│ 📥 Download Status \n"
-                           f"<blockquote><b>⚡[(『 WELCOME STRANGER 』🙋 ...⏳)](https://i.ibb.co/hxQ73ZYw/photo-2025-04-12-18-46-28-7492500010408345604.jpg)</b></blockquote>\n┃\n"
-                           f'┣💃𝐂𝐫𝐞𝐝𝐢𝐭 » {CR}\n┃\n'
-                           f"╰━📚𝐁𝐚𝐭𝐜𝐡 » {b_name}\n"
-                           f"╚═════════════════════════════════╝\n"
-                           f"╠═══════════════════════════════════╣\n"
-                           f"<blockquote>📚𝐓𝐢𝐭𝐥𝐞 » {name}</blockquote>\n┃\n"
-                           f"┣🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {quality}\n┃\n"
-                           f'┣━🔗𝐋𝐢𝐧𝐤 » <a href="{link0}">**Original Link**</a>\n┃\n'
-                           f'╰━━🖇️𝐔𝐫𝐥 » <a href="{url}">**Api Link**</a>\n'
-                           f"╚════════════════════════════════════╝\n"
-                           f"🛑**Send** /stop **to stop process**\n┃\n"
-                           f"╰━[🙆‍♂️ 𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 🤷‍♂️ 『 WELCOME STRANGER 』🙋](https://i.ibb.co/hxQ73ZYw/photo-2025-04-12-18-46-28-7492500010408345604.jpg)"
-                    Show = f"<i><b>Video Downloading</b></i>\n<blockquote><b>{str(count).zfill(3)}) {name1}</b></blockquote>")
-                    prog = await bot.send_message(channel_id, Show, disable_web_page_preview=True)
-                    prog1 = await m.reply_text(Show1, disable_web_page_preview=True)
-                    res_file = await helper.download_and_decrypt_video(url, cmd, name, appxkey)  
-                    filename = res_file  
-                    await prog1.delete(True)
-                    await prog.delete(True)
-                    await helper.send_vid(bot, m, cc, filename, thumb, name, prog, channel_id)
-                    count += 1  
-                    await asyncio.sleep(1)  
-                    continue  
+                elif 'encrypted.m' in url:
+    remaining_links = len(links) - count
+    progress = (count / len(links)) * 100
+
+    Show1 = (
+        f"╠════════════════════════════════════╣\n"
+        f"║   👨‍💻 STRANGER BOT DOWNLOADER v1.0      ║\n"
+        f"╚════════════════════════════════════╝\n"
+        f"<blockquote>🚀𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬 » {progress:.2f}%</blockquote>\n┃\n"
+        f"┣🔗𝐈𝐧𝐝𝐞𝐱 » {count}/{len(links)}\n┃\n"
+        f"╰━🖇️𝐑𝐞𝐦𝐚𝐢𝐧 » {remaining_links}\n"
+        f"╠═══════════════════════════════╣\n"
+        f"╠═══ ⟦ STRANGER.DOWNLOAD ⟧ ═══╣\n"
+        f"╰──────────⟦ RUNNING ⟧ \n"
+        f"╭──[ WELCOME_STRANGER@Terminal ]──⟫ \n"
+        f"│ 📥 Download Status \n"
+        f"<blockquote><b>⚡[(『 WELCOME STRANGER 』🙋 ...⏳)]"
+        f"(https://i.ibb.co/hxQ73ZYw/photo-2025-04-12-18-46-28-7492500010408345604.jpg)</b></blockquote>\n┃\n"
+        f"┣💃𝐂𝐫𝐞𝐝𝐢𝐭 » {CR}\n┃\n"
+        f"╰━📚𝐁𝐚𝐭𝐜𝐡 » {b_name}\n"
+        f"╚═════════════════════════════════╝\n"
+        f"╠═══════════════════════════════════╣\n"
+        f"<blockquote>📚𝐓𝐢𝐭𝐥𝐞 » {name}</blockquote>\n┃\n"
+        f"┣🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {quality}\n┃\n"
+        f"┣━🔗𝐋𝐢𝐧𝐤 » <a href=\"{link0}\">**Original Link**</a>\n┃\n"
+        f"╰━━🖇️𝐔𝐫𝐥 » <a href=\"{url}\">**Api Link**</a>\n"
+        f"╚════════════════════════════════════╝\n"
+        f"🛑**Send** /stop **to stop process**\n┃\n"
+        f"╰━[🙆‍♂️ 𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 🤷‍♂️ 『 WELCOME STRANGER 』🙋]"
+        f"(https://i.ibb.co/hxQ73ZYw/photo-2025-04-12-18-46-28-7492500010408345604.jpg)"
+    )
+
+    Show = (
+        f"<i><b>Video Downloading</b></i>\n"
+        f"<blockquote><b>{str(count).zfill(3)}) {name1}</b></blockquote>"
+    )
+
+    prog = await bot.send_message(channel_id, Show, disable_web_page_preview=True)
+    prog1 = await m.reply_text(Show1, disable_web_page_preview=True)
+
+    res_file = await helper.download_and_decrypt_video(url, cmd, name, appxkey)
+    filename = res_file
+
+    await prog1.delete(True)
+    await prog.delete(True)
+
+    await helper.send_vid(bot, m, cc, filename, thumb, name, prog, channel_id)
+
+    count += 1
+    await asyncio.sleep(1)
+    continue
+  
 
                 elif 'drmcdni' in url or 'drm/wv' in url:
                     remaining_links = len(links) - count
