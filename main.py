@@ -1361,19 +1361,19 @@ async def txt_handler(bot: Client, m: Message):
                     remaining_links = len(links) - count
                     progress = (count / len(links)) * 100
                     Show1 = f"<pre>\n"
-    f"╔════════════════════════════════════╗\n"
-    f"║   🚀 PROGRESS  : {progress:.2f}%                       ║\n"
-    f"║   🔢 INDEX     : {count}/{len(links)}                      ║\n"
-    f"║   🖇️ REMAIN    : {remaining_links} files                  ║\n"
-    f"╠════════════════════════════════════╣\n"
-    f"║   👨‍💻 STRANGER BOT DOWNLOADER v1.0      ║\n"
-    f"╚════════════════════════════════════╝\n"
-    f"┌────────── META DATA ─────────┐\n"
-    f"│ 👤 CREDIT     : {CR} \n"
-    f"│ 📚 BATCH      : {b_name} \n"
-    f"│ 📖 TITLE      : {name} \n"
-    f"│ 🍁 QUALITY    : {quality} \n"
-    f"│ 🔗 ORIGINAL   : [Open Link]({link0}) \n
+                    f"╔════════════════════════════════════╗\n"
+                    f"║   🚀 PROGRESS  : {progress:.2f}%║\n"
+                    f"║   🔢 INDEX     : {count}/{len(links)}║\n"
+                    f"║   🖇️ REMAIN    : {remaining_links} files║\n"
+                    f"╠════════════════════════════════════╣\n"
+                    f"║   👨‍💻 STRANGER BOT DOWNLOADER v9.0      ║\n"
+                    f"╚════════════════════════════════════╝\n"
+                    f"┌────────── META DATA ─────────┐\n"
+                    f"│ 👤 CREDIT     : {CR} \n"
+                    f"│ 📚 BATCH      : {b_name} \n"
+                    f"│ 📖 TITLE      : {name} \n"
+                    f"│ 🍁 QUALITY    : {quality} \n"
+                    f"│ 🔗 ORIGINAL   : [Open Link]({link0}) \n
                     prog = await bot.send_message(channel_id, Show, disable_web_page_preview=True)
                     prog1 = await m.reply_text(Show1, disable_web_page_preview=True)
                     res_file = await helper.decrypt_and_merge_video(mpd, keys_string, path, name, raw_text2)
