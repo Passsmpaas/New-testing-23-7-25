@@ -1323,7 +1323,7 @@ async def txt_handler(bot: Client, m: Message):
                             f"╠═══ ⟦ STRANGER.DOWNLOAD ⟧ ═══╣\n" \
                             f"╰──────────⟦ RUNNING ⟧ \n" \
                             f"╭──[ WELCOME_STRANGER@Terminal ]──⟫ \n" \
-                            f"│ 📥 Download Status \n" \      
+                            f"│ 📥 Download Status \n" \
                             f"╠════════════════════════════════════╣\n"
                             f"f"╠═══🔗𝐈𝐧𝐝𝐞𝐱 » {count}/{len(links)}         ═══╣\n" \
                             f"f"╠═══🖇️𝐑𝐞𝐦𝐚𝐢𝐧 » {remaining_links}          ═══╣\n"" \
