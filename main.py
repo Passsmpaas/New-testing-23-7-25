@@ -1219,7 +1219,6 @@ async def txt_handler(bot: Client, m: Message):
                   
                 if "drive" in url:
                     try:
-                    try:
                         ka = await helper.download(url, name)
                         copy = await bot.send_document(chat_id=channel_id,document=ka, caption=cc1)
                         count+=1
