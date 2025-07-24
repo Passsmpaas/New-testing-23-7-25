@@ -1319,14 +1319,13 @@ async def txt_handler(bot: Client, m: Message):
                 elif 'encrypted.m' in url:    
                     remaining_links = len(links) - count
                     progress = (count / len(links)) * 100
-                    Show1 = f"<blockquote>🚀𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬 » {progress:.2f}%</blockquote>\n┃\n" \
+                    Show1 = f"╚═════════════════════════════════╝\n"
+                           f"╠═══════════════════════════════════╣\n"
+                           f"<blockquote>🚀𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬 » {progress:.2f}%</blockquote>\n┃\n" \
                            f"┣🔗𝐈𝐧𝐝𝐞𝐱 » {count}/{len(links)}\n┃\n" \
                            f"╰━🖇️𝐑𝐞𝐦𝐚𝐢𝐧 » {remaining_links}\n" \
-                           f"╠═══════════════════════════════╣\n"
-                           f"╠═══ ⟦ STRANGER.DOWNLOAD ⟧ ═══╣\n"
-                           f"╰──────────⟦ RUNNING ⟧ \n"
-                           f"╭──[ WELCOME_STRANGER@Terminal ]──⟫ \n"
-                           f"│ 📥 Download Status \n"
+                           f"╚═════════════════════════════════╝\n"
+                           f"╠═══════════════════════════════════╣\n"
                            f"<blockquote><b>⚡[(『 WELCOME STRANGER 』🙋 ...⏳)](https://i.ibb.co/hxQ73ZYw/photo-2025-04-12-18-46-28-7492500010408345604.jpg)</b></blockquote>\n┃\n" \
                            f'┣💃𝐂𝐫𝐞𝐝𝐢𝐭 » {CR}\n┃\n' \
                            f"╰━📚𝐁𝐚𝐭𝐜𝐡 » {b_name}\n" \
