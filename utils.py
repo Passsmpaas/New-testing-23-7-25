@@ -76,12 +76,12 @@ async def progress_bar(current, total, reply, start, app=None, chat_id=None):
         bar_length = 10
         completed_length = int(current * bar_length / total)
         remaining_length = bar_length - completed_length
-        completed_symbol, remaining_symbol = random.choice([("🟩", "⬜")])
+        completed_symbol, remaining_symbol = random.choice([("▪️", "▫️")])
         progress_bar = completed_symbol * completed_length + remaining_symbol * remaining_length
 
         try:
             await reply.edit(
-                f'<blockquote>`╭──⌯═════𝐁𝐨𝐭 𝐒𝐭𝐚𝐭𝐢𝐜𝐬══════⌯──╮\n'
+                f'<blockquote>`╭──⌯═════『 STRANGER 』════⌯──╮\n'
                 f'├⚡ {progress_bar}\n'
                 f'├⚙️ Progress ➤ | {perc} |\n'
                 f'├🚀 Speed ➤ | {sp} |\n'
@@ -89,7 +89,7 @@ async def progress_bar(current, total, reply, start, app=None, chat_id=None):
                 f'├🧲 Size ➤ | {tot} |\n'
                 f'├⏱️ Elapsed ➤ | {elapsed} |\n'
                 f'├🕑 ETA ➤ | {eta} |\n'
-                f'╰─═══✨🦋{CREDIT}🦋✨═══─╯`</blockquote>'
+                f'╰─═══🦋『 STRANGER 』🦋═══─╯`</blockquote>'
             )
 
             # Optional sticker send
